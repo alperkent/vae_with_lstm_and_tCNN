@@ -7,7 +7,7 @@ model.py file builds the network architecture and implements a function to gener
 
 main.py file loads the dataset, trains the model and evaluates it on validation set during training, saves the model parameters to model.pk file and outputs losses per epoch and graphs of losses over epochs.
 
-eval.py file loads the learned model parameters and generates samples from random vectors.
+generator.py file loads the learned model parameters and generates samples from random vectors.
 
 model.pk file contains learned model parameters.
 
@@ -18,6 +18,6 @@ In [1]: %cd "CURRENT DIRECTORY"
 
 In [2]: %run main.py
 
-In [3]: %run eval.py
+In [3]: %run generator.py
 
 While running main.py, you will see 16 input and output images to observe the performance of the network after each epoch of training.
